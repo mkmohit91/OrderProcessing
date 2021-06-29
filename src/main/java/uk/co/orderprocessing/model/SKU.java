@@ -1,7 +1,11 @@
 package uk.co.orderprocessing.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class SKU {
     private SKUType itemType;
+
+    @JsonIgnore
     private int value;
 
     public SKUType getItemType() {
