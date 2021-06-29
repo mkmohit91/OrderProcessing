@@ -1,5 +1,7 @@
 package uk.co.orderprocessing.model;
 
+import uk.co.orderprocessing.model.sku.SKUWithCount;
+
 import java.util.List;
 
 public class Order {

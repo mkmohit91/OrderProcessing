@@ -1,4 +1,4 @@
-package uk.co.orderprocessing.model;
+package uk.co.orderprocessing.model.sku;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

@@ -1,4 +1,4 @@
-package uk.co.orderprocessing.model;
+package uk.co.orderprocessing.model.sku;
 
 public class SKUWithCount {
     private SKU sku;
