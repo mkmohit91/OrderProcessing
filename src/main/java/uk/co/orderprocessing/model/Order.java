@@ -3,14 +3,14 @@ package uk.co.orderprocessing.model;
 import java.util.List;
 
 public class Order {
-    private List<SKU> items;
+    private List<SKUWithCount> items;
     private Long amountToBePaid;
 
-    public List<SKU> getItems() {
+    public List<SKUWithCount> getItems() {
         return items;
     }
 
-    public void setItems(List<SKU> items) {
+    public void setItems(List<SKUWithCount> items) {
         this.items = items;
     }
 

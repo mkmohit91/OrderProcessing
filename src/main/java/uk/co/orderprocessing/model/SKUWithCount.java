@@ -24,4 +24,12 @@ public class SKUWithCount {
     public void setCount(int count) {
         this.count = count;
     }
+
+    @Override
+    public String toString() {
+        return "SKUWithCount{" +
+                "sku=" + sku +
+                ", count=" + count +
+                '}';
+    }
 }

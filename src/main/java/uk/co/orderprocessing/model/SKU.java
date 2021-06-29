@@ -29,6 +29,13 @@ public class SKU {
         this.value = value;
     }
 
+    public SKU(String itemType) {
+        this.itemType = SKUType.valueOf(itemType);
+    }
+
+    public SKU() {
+    }
+
     @Override
     public String toString() {
         return "SKU{" +
