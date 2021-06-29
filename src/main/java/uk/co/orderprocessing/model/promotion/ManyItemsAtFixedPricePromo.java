@@ -1,11 +1,18 @@
 package uk.co.orderprocessing.model.promotion;
 
+import uk.co.orderprocessing.model.Order;
 import uk.co.orderprocessing.model.sku.SKUType;
 
 public class ManyItemsAtFixedPricePromo implements PromotionalOffer{
     private SKUType type;
     private int bundleCount;
     private Long offerPrice;
+
+    public ManyItemsAtFixedPricePromo(SKUType type, int bundleCount, Long offerPrice) {
+        this.type = type;
+        this.bundleCount = bundleCount;
+        this.offerPrice = offerPrice;
+    }
 
     public Long getOfferPrice() {
         return offerPrice;
@@ -38,5 +45,10 @@ public class ManyItemsAtFixedPricePromo implements PromotionalOffer{
                 ", bundleCount=" + bundleCount +
                 ", offerPrice=" + offerPrice +
                 '}';
+    }
+
+    @Override
+    public Long applyPromo(Order order) {
+        return null;
     }
 }
